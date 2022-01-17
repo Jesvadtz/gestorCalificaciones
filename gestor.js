@@ -46,7 +46,7 @@ let materias3grado = [
   "Educación Socioemocional III",
 ];
 
-// Función para saber que materias se muestran
+// Función para saber que materias se muestran y calcular promedio
 
 let gradoMaterias = (grado) => {
   let calMat = 0;
@@ -117,6 +117,8 @@ do {
   }
 } while (continuar);
 
+//Función para ordenar alumnnos ascendente o descendente
+
 let orden = parseInt(
   prompt(
     "¿Cómo deseas que te muestre el registro de alumnos? \n" +
@@ -136,6 +138,7 @@ const alumnosSorted = alumnos.sort((a, b) => {
   }
 });
 
+//Función para saber si un alumnno está aprobado o no y la impresión de alumnos registrados
 alumnosSorted.forEach((alumno) => {
   let aprobado = alumno[7];
   let nota = "Alumno reprobado";
